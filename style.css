@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --PaleBlue: hsl(225, 100%, 94%);
+  --BrightBlue: hsl(245, 75%, 52%);
+  --VeryPaleBlue: hsl(225, 100%, 98%);
+  --DesaturatedBlue: hsl(224, 23%, 55%);
+  --DarkBlue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: var(--PaleBlue);
+  background-size: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
+}
+
+main.container {
+  width: 380px;
+  background-color: var(--VeryPaleBlue);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 5px 20px rgba(122, 122, 122, 0.151);
+}
+
+main.container img {
+  width: 100%;
+}
+
+main.container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 40px;
+}
+
+main.container .content h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.6em;
+  color: var(--DarkBlue);
+}
+
+main.container .content p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1em;
+  color: var(--DesaturatedBlue);
+  margin-top: 20px;
+  width: 88%;
+  line-height: 22px;
+}
+
+main.container .plan {
+  width: 80%;
+  height: 80px;
+  background-color: hsl(225, 100%, 96%);
+  margin-top: 20px;
+  border-radius: 10px;
+  margin: auto;
+  padding: 20px;
+}
+
+main.container .plan .content2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+main.container .plan .content2 img {
+  width: 15%;
+}
+
+main.container .plan .content2 ul {
+  list-style: none;
+}
+
+main.container .plan .content2 ul li span {
+  margin-right: 60px;
+  color: var(--DarkBlue);
+  font-weight: 900;
+  font-size: 1.2em;
+}
+
+main.container .plan .content2 ul li {
+  font-size: 0.8em;
+  color: var(--DesaturatedBlue);
+}
+
+main.container .plan .content2 p {
+  font-size: 0.8em;
+  color: var(--BrightBlue);
+  font-weight: 700;
+}
+
+main.container .content3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 40px;
+}
+
+main.container .content3 button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: var(--BrightBlue);
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 3px 5px 5px rgba(38, 68, 133, 0.322);
+}
+
+main.container .content3 p {
+  margin-top: 20px;
+  color: var(--DesaturatedBlue);
+  font-weight: 700;
+  font-size: 0.8em;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: var(--PaleBlue);
+    background-size: 100vw;
+  }
+}
